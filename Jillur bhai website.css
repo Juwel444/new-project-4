@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ .text-left{
+     text-align: left;
+ }
+ .text-center{
+     text-align: center;
+ }
+ .text-right
+     text-align: right;
+ }
+.clear::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.mid-contant{
+    max-width: 1300px;
+    margin: auto;
+}
+p-bg{
+    background: #f7f7f7;
+}
+/*Start main css*/
+.main-header{
+    background: #ddd;
+    border-bottom: 1px solid rgb(194, 188, 188);
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo{
+    width: 30%;
+    padding-top: 10px;
+}
+.manu{
+    width: 60%;
+}
+.button{
+    width: 10%;
+}
+.logo img{
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+.logo span{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 500px;
+}
+.manu ul{}
+.manu ul li{
+    display: inline-block;
+}
+.manu ul li{
+    position: relative;
+}
+.manu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background:#fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+    margin-top: 2px;
+}
+.manu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    z-index: 10;
+
+}
+.manu ul ul li a:hover{
+    background: rgb(212, 204, 204);
+    width: 160px;
+
+}
+.manu ul ul li {}
+.manu ul ul li a{
+    line-height: 60px;
+}
+.manu ul li a{
+    display: block;
+    padding: 0px 20px;
+    line-height: 99px;
+    font-size: 17px;
+    font-size: 20px;
+}
+.manu ul li a:hover{
+
+}
+.button{}
+.btn{
+    line-height: 40px;
+}
+.btn{
+    margin-top: 20px;
+}
+.btn a{
+    padding: 0px 10px;
+   
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+}
+/*banner*/
+.banner{
+	background: url(https://images.unsplash.com/photo-1598109503348-336dec2d39fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=745&q=80) no-repeat center center;
+	background-size: cover;
+	padding: 200px 0;
+    color: #fff;
+    position: relative;
+    z-index: 9;
+    margin-top: 40px;
+}
+.banner-contant{}
+.banner::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0,0,.5);
+    z-index: -1;
+
+}
+.banner-contant h3{
+    font-size: 26px;
+    font-weight: 400px;
+}
+.banner-contant h2{
+    font-size: 60px;
+    margin: 30px 0px;
+
+}
+.defoult-btn{
+    color: rgb(87, 79, 79);
+    padding: 20px 30px;
+    background: #fff;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 600px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    transition: .3s;
+}
+.defoult-btn i{
+    padding: 2px 5px;
+    font-size: 30px;
+    margin-right: 4px;
+}
+.defoult-btn:hover{
+    background: rgb(57, 130, 226);
+}
+/*banner bottom*/
+    .banner-bottom{
+        background: #fff;
+        padding: 100px 0px;
+    }
+    .video-left{
+        width: 48%;
+    }
+    .video-contant{
+
+        width: 48%;
+    }
+    .video-contant h3{
+        font-size: 50px;
+        font-weight: 500px;
+        margin-bottom: 20px;
+    }
+    .video-contant p{
+        font-size: 20px;
+        line-height: 1.5em;
+        align-items: justify;
+ 
+    }
+
+/*banner bottom*/
+/*services*/
+    .services{
+        background: #fff;
+        padding: 100px 0px; 
+        margin-bottom: 50px;       
+    }
+    .services-title{
+        padding: 0 200px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .services-title h1{
+        font-size: 40px;
+        font-weight: 600px;
+        display: inline-block;
+    
+} 
+    .services-title p{
+        font-size: 20px;
+    }
+/*services*/
+/*Services item*/
+.team-title h1{
+    margin-top: 750px;
+}
+    .services-item{
+        margin-top: 90px;
+    }
+    .services-box{
+        width: 31.3%;
+        box-shadow: 4px 4px 20px 0 rgba(0, 0,0,.3);
+        margin-right: 2%;
+        margin-bottom: 30px;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+    .s-icon{
+        width: 50px;
+        float: left;
+        min-height: 160px;
+        font-size: 50px;
+        color: royalblue;
+        margin-right: 10px;
+    }
+    .s-contant{
+        margin-top: 8px;
+
+
+    }
+    .s-contant h3{
+        font-size: 23px;
+        font-weight: 500px;
+        margin-bottom: 17px;
+    }
+    .s-contant p{
+        font-size: 20px;
+        line-height: 1.6em;
+        color: rgb(158, 152, 152);
+    }
+
+/*Sirvices item*/
+/*pricing table css*/
+    .pricing-table{
+        background:#fff;
+        padding: 100px 0;
+    }
+    .pricing-title h2{
+        font-size: 50px;
+        font-weight: 800px;
+        margin-bottom: 10px;
+    }
+    .pricing-title p{
+        font-size: 30px;
+        font-weight: 600px;
+        color: rgb(146, 175, 199);
+    }
+    .pricing-table-item{
+        width: 31.3%;
+        margin-right: 2%;
+        background: #fff;
+        margin-top: 80px;
+        box-shadow: 3px 4px 30px 0px rgba(29, 126, 216,.3);
+    }
+    .pricing-table-item:hover .p-heading{
+        background: rgb(39, 114, 211);
+    }
+    .p-heading{
+        padding: 30px;
+        border-bottom: 1px solid #ddd;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .p-heading h1{
+        margin: 20px 0px;
+        font-size: 30px;
+        margin:35px 0px;
+    }
+    .p-heading h1 span{
+        font-size: 20px;
+    }
+    .p-heading h4{
+        font-size: 20px;
+        font-weight: 400px;
+    }
+    .p-heading h5{
+        font-size: 20px;
+        font-weight: 400px;
+        margin-bottom: 10px;
+
+    }
+    .pricing-table-item:nth-child(3){
+           margin-right: 0;
+ 
+    }
+    .p-heading p{
+        font-size: 20px;
+        line-height: 1em;
+    }
+
+    .p-contant{
+        padding: 30px;
+
+    }
+    .p-contant ul{
+        list-style: none;
+    }
+    .p-contant ul li{
+        margin: 25px 0px;
+        font-size: 22px;
+        color: slategrey;
+    }
+    .p-contant ul li span{
+        display: inline-block;
+        width: 60px;
+        color: rgb(42, 139, 219);
+    }
+    .p-button .defult-btn{
+        box-shadow: 3px 4px 30px 0px rgba(29, 126, 216,.3);
+        display: inline-block;
+        padding: 20px 30px;
+        margin-left: 80px;
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 500px;
+        border-radius: 5px;
+
+
+    }
+    .pricing-table-item:hover .p-button .defult-btn{
+        background: rgb(38, 95, 201);
+        color: #ddd;
+    }
+/*pricing table css*/
+/*team sectcin*/
+    .team{
+        padding: 50px 0;
+    }
+    .team-title h1{
+        margin: 30px 0;
+        margin-top: 300px;
+        
+    }
+    .team-member{
+        padding: 40px;
+    }
+    .member{
+        width: 23%;
+        margin-right: 2%;
+        background: #fff;
+        box-shadow: 3px 4px 30px 0px rgba(29, 126, 216,.3);
+    }
+    .member img{
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        height: 200px;
+    }
+    .member-contant{
+        padding: 25px 30px;
+
+    }
+    .member-contant h4{
+        font-size: 23px;
+        margin-bottom: 12px;
+        font-weight: 500;
+    }
+    .member-contant p{
+        font-size: 19px;
+        color: #767676;
+    }
+/*team sectcin*/
+
+/*news section */
+    .news-section{
+        margin-top: 80px;
+    }
+    .news-title p{
+        margin-right: 20px;
+    }
+    .news-title h1{
+        padding: 20px;
+    }   
+    .news-title p{
+        font-size:20px;
+        font-weight: 500px;
+        margin-top: 300px;
+        color: #767676;
+
+    }
+    .news-title .title h1{
+        margin-top: 56px;
+        font-size: 44px;
+    }
+    .news-form{
+        margin-top: 20px;
+    }
+    .defult-input{
+        width: 350px;
+        padding: 20px 15px;
+        font-size: 20px;
+        border: 1px solid #dac8c8;
+        border-radius: 10px;
+        box-shadow: 3px 4px 30px 0px rgba(57, 85, 110, 0.3);
+        transition: .4s;
+    }
+    .submit-btn{
+        font-size: 20px;
+        font-weight: 500px;
+        padding: 20px 50px;
+        border: 1px solid #767676;
+        background: rgb(52, 114, 230);
+        border-radius: 10px;
+        display: inline-block;
+        margin-left: 20px;
+        transition: .4s;
+    }
+    .submit-btn:hover{
+        box-shadow: 3px 4px 30px 0px rgba(57, 85, 110, 0.5);
+        background: #ddd;
+        border: 2px solid rgb(52, 114, 230);
+        color: rgb(52, 114, 230);;
+    }
+    .defult-input:focus{
+        box-shadow: 3px 4px 30px 0px rgba(29, 126, 216,.7);
+        border: 1px solid rgb(35, 98, 214);
+    }
+/*news section */
+
+/*blog section css*/
+    .blog{
+        padding: 60px 0;
+        margin-bottom: 30px;
+    }
+    .blog-title{
+        padding: 100px 0;
+    }
+    .blog-title h2{
+        font-size: 50px;
+        font-weight: 500px;
+        margin-left: 10px;
+    }
+    .b-heading{
+        width: 50%;
+    }
+    .b-contant{
+        width: 50%;
+        font-size: 20px;
+        font-weight: 500px;
+        color: #767676;
+        line-height: 1.6em;
+    }
+    .blog-item{}
+    .blog-post-item{
+        width: 48%;
+        background: #fff;
+        box-shadow: 3px 4px 30px 0px rgba(29, 126, 216,.2);
+
+    }
+    .blog-post-contant{
+        margin-top: 20px;
+    }
+    .blog-post-contant p{
+        font-size: 20px;
+        color: #767676;
+        line-height: 1.7em;
+    }
+    .blog-post-contant h3{
+        font-size: 25px;
+        font-weight: 500px;
+        margin-bottom: 20px;
+    }
+    .blog-post-item img{
+        float: left;
+        width: 320px;
+        margin-right: 30px;
+    }
+/*blog section css*/
+
+/* testmonial*/
+    .testminial{
+        padding: 100px 0;
+    } 
+    .testmonial-item{
+        margin-top: 100px;
+    } 
+    .item{
+    width: 32%;
+    margin-right: 2%;   
+    } 
+.item:last-child{
+    margin-right: 0;
+}
+    .item:last-child{
+        margin-right: 0;
+    }   
+    .t-bio{
+        padding: 20px;
+    }
+    .t-contant{
+        background: #fff;
+        box-shadow: 3px 4px 30px 0px rgba(29, 126, 216,.4);
+        padding: 60px 40px;
+        box-sizing: border-box;
+        margin-bottom: 60px;
+        position: relative;
+
+    }
+    .t-contant p{
+        color: #767676;
+        font-size: 20px;
+        line-height: 1.7em;
+    }
+    .t-contant::after{
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 20px 0 20px;
+        border-color: #c7d7e4 transparent transparent transparent;
+    }
+    .t-user-img img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        float: left;
+        margin-right: 20px;
+    }
+    .t-user-img{
+        width: 250px;
+        margin: auto;
+    }
+    .t-bio{
+        font-size: 20px;
+        font-weight: 500px;
+        margin-bottom: 10px;
+    }
+    .t-bio span{
+        color: #767676;
+        display: inline-block;
+    }
+   /* testmonial*/
+
+   /*contact*/
+   .contact-section {
+    padding-top: 550px;
+ 
+}
+.contact-left-map{
+    width: 48%;
+}
+.contact-right-form{
+    width: 48%;
+    padding-top: 50px;
+}
+.w50{
+    width: 33%;
+}
+.contact-right-form h4{
+    font-size: 50px;
+    font-weight: 500px;
+    padding-bottom: 25px;
+
+}
+.contact-right-form p{
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 1.8em;
+    color: #767676;
+}
+.footer{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 500px;
+    display: inline-block;
+    margin-left: 200px;
+    color: #767676;
+
+}
+   /*contact*/
+
+   /*Icon design*/
+    .icon ul li{
+        display: inline-block;
+        padding: 10px 20px;
+        color: ;
+    }
+    .icon ul li a{
+        font-size: 80px;
+    }
+    .red{
+        color: red;
+    }
+    .blue{
+        color: rgb(0, 63, 199);
+    }
+    .black{
+        color: black;
+    }
+    .green{
+        color: rgb(102, 179, 102);
+    }
+   /*Icon design*/
+
+
+
+
+
+
+
+
+
+
